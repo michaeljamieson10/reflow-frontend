@@ -27,7 +27,7 @@ const Login: React.FC<LoginProps> = props => {
         if (keyCode === 13) submitLogin();
     }
 
-    return (<div></div>
+    return (<div>Login page</div>
         // <div className="login" style={{ backgroundImage: `url(${login})` }}>
         //     <div className="login-card">
         //         <form>
