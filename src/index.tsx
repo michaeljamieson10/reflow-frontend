@@ -19,11 +19,12 @@ const store = createStore(reducers, applyMiddleware(thunk))
         <Provider store={store}>
             {/*<App />*/}
             {/*<Router history={history}>*/}
-            {/*    <Switch>*/}
-            {/*        <Route path="/" render={Test} />*/}
-            {/*        <Route path="/login" component={LoginContainer} />*/}
-            {/*    </Switch>*/}
+            {/*/!*    <Switch>*!/*/}
+            {/*/!*        <Route path="/" render={Test} />*!/*/}
+            {/*/!*        <Route path="/login" component={LoginContainer} />*!/*/}
+            {/*/!*    </Switch>*!/*/}
             {/*</Router>*/}
+
             <Application/>
         </Provider>,
         document.querySelector("#root")
