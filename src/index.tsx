@@ -5,7 +5,8 @@ import {Provider} from "react-redux";
 import thunk from "redux-thunk";
 import {App} from "./components/App";
 import {reducers} from "./reducers";
-
+import { createBrowserHistory } from "history";
+export const history = createBrowserHistory();
 const store = createStore(reducers, applyMiddleware(thunk))
 
 ReactDOM.render(
