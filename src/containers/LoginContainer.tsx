@@ -6,7 +6,6 @@ import { attemptLogin } from "../actions/oauth";
 import { State, User } from "../store/reduxStoreState";
 import { history } from "../index";
 import Login from "../components/Login";
-// import Login from "../components/Login";
 
 const LoginPage: React.FC<{}> = () => {
     const dispatch = useDispatch();
