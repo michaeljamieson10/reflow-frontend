@@ -3,6 +3,7 @@ import base64 from 'base-64';
 import qs from 'query-string';
 import {logException} from "./apiUIHelperActions";
 import { history } from '../index'
+import {updateLoggedInUserInfo} from "./user";
 
 export const LOCAL_STORAGE_ACCESS_TOKEN_KEY = 'accessToken';
 export const LOCAL_STORAGE_ACCESS_TOKEN_TYPE = 'accessTokenType';
@@ -110,7 +111,7 @@ const login = (email:any, password:any) => {
         }),
         LOGIN_SUCCESS, LOGIN_FAILURE, ACCESS_TOKEN_TYPES.user);
 };
-export const attemptLogin = (email:any, password:any, redirectLocation = undefined) => (dispatch:any, getState:any) => {
+export const attemptLogin = (email:any, password:any, redirectLocation:any) => (dispatch:any, getState:any) => {
     return dispatch(login(email, password))
         .then((response:any) => {
             if (!response.error) {

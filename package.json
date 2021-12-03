@@ -14,6 +14,7 @@
     "@types/react-redux": "^7.1.20",
     "axios": "^0.24.0",
     "base-64": "^1.0.0",
+    "normalizr": "^3.6.1",
     "query-string": "^7.0.1",
     "raven-js": "^3.27.2",
     "react": "^17.0.2",
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@types/base-64": "^1.0.0"
+    "@types/base-64": "^1.0.0",
+    "reselect": "^4.1.5"
   }
 }
